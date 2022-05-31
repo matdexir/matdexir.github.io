@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html {
+  font-family: 'VT323', monospace;
+}
+
+.terminal {
+    --color: green;
+    --background: black;
+    --link-color: darkblue;
+    --size: 1.5;
+    --glow: 1;
+}
+
+.cmd-cursor {
+  --original-color: #03A062;
+}
