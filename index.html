@@ -1,14 +1,22 @@
+<!DOCTYPE html>
 <html>
-  <head> </head>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
   <body>
-    <h1>Detect ENTER key with jQuery</h1>
-    <div id="output-block">
-    </div>
-    <div id="command-block">
-      <label>TextBox Area: </label>
-      <input id="command" type="text" />
-    </div>
-    <script type="text/javascript" src="./scripts/commands.js"></script>
-    <script type="text/javascript" src="./scripts/queries.js"></script>
+    <template id="greetings">
+ _   _ _____ _     _     ___   __        _____  ____  _     ____  
+| | | | ____| |   | |   / _ \  \ \      / / _ \|  _ \| |   |  _ \ 
+| |_| |  _| | |   | |  | | | |  \ \ /\ / / | | | |_) | |   | | | |
+|  _  | |___| |___| |__| |_| |   \ V  V /| |_| |  _ <| |___| |_| |
+|_| |_|_____|_____|_____\___/     \_/\_/  \___/|_| \_\_____|____/
+    </template>
+    <script src="./scripts/queries.js"></script>
   </body>
 </html>
