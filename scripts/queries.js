@@ -1,6 +1,10 @@
-let count = 0
-$("body").terminal(
+term = $("body").terminal(
   {
+    help: function() {
+      const help_msg = $('<p>Welcome to the help message. Here is a list of all the available commands:<br>help<br>hello<br>cat<br>name<br></p>');
+      this.echo(help_msg)
+      console.log(term)
+    },
     hello: function (what) {
       this.echo("Hello, " + what + ". Welcome to this terminal.");
     },
@@ -23,10 +27,7 @@ $("body").terminal(
     greetings: greetings.innerHTML,
     prompt: "matdexir@about> ",
     keymap: {
-      "ENTER": function (e, original) {
-          original();
-          this.set_prompt(++count + ">")
-      },
+      // To be added
     },
   }
 );
