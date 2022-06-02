@@ -29,5 +29,7 @@ term = $("body").terminal(
     keymap: {
       // To be added
     },
+    autocompleteMenu: true,
+    completion: ['help', 'hello', 'cat']
   }
 );
