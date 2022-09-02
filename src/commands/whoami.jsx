@@ -3,16 +3,16 @@ import Link from "../components/link";
 const whoami = (
   <div
     style={{
-      paddingLeft: "10vw",
-      paddingRight: "10vw",
+      paddingLeft: "5vw",
+      paddingRight: "5vw",
     }}
   >
     <div
       style={{
-        textAlign: "center",
+        textAlign: "justify",
       }}
     >
-      <h2>Hello Stranger!</h2>
+      <h2 style={{ textAlign: "center" }}>Hello Stranger!</h2>
       My name is <span style={{ fontWeight: "800" }}>Matthieu</span>! I am a
       senior Computer Science Student @{" "}
       <Link target="_blank" href="https://www.csie.ntu.edu.tw/">

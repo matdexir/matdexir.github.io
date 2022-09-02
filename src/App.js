@@ -1,3 +1,4 @@
+import "./App.css";
 import { ReactTerminal } from "react-terminal";
 import Whoami from "./commands/whoami";
 import Links from "./commands/links";
@@ -7,6 +8,42 @@ import { useState } from "react";
 
 function App() {
   const [theme, setTheme] = useState("material-dark");
+  const WelcomeMessage = (
+    <span>
+      <span style={{ color: "yellowgreen" }}>
+        <br />
+        ##::::'##::::'###::::'########:'########::'########:'##::::'##:'####:'########::
+        <br />
+        ###::'###:::'## ##:::... ##..:: ##.... ##: ##.....::. ##::'##::. ##::
+        ##.... ##:
+        <br />
+        ####'####::'##:. ##::::: ##:::: ##:::: ##: ##::::::::. ##'##:::: ##::
+        ##:::: ##:
+        <br />
+        ## ### ##:'##:::. ##:::: ##:::: ##:::: ##: ######:::::. ###::::: ##::
+        ########::
+        <br />
+        ##. #: ##: #########:::: ##:::: ##:::: ##: ##...:::::: ## ##:::: ##::
+        ##.. ##:::
+        <br />
+        ##:.:: ##: ##.... ##:::: ##:::: ##:::: ##: ##:::::::: ##:. ##::: ##::
+        ##::. ##::
+        <br />
+        ##:::: ##: ##:::: ##:::: ##:::: ########:: ########: ##:::. ##:'####:
+        ##:::. ##:
+        <br />
+        ..:::::..::..:::::..:::::..:::::........:::........::..:::::..::....::..:::::..::
+        <br />
+      </span>
+      <br />
+      <a href="mailto:matthieudesir@gmail.com">matthieudesir@gmail.com</a>{" "}
+      <br />
+      <br />
+      {Links} <br /> <br />
+      Welcome to my obsession with terminals 😋 <br />
+      Type "help" to explore what there is to offer 😁 <br /> <br />
+    </span>
+  );
   const toggle_theme = () => {
     if (theme === "material-dark") {
       setTheme("material-light");
@@ -18,7 +55,7 @@ function App() {
   const commands = {
     whoami: Whoami,
     toggle_theme: toggle_theme,
-    projects: Projects,
+    // projects: Projects,
     help: Help,
     contact: Links,
     cd: (directory) => `changed path to ${directory}`,
@@ -32,12 +69,15 @@ function App() {
 
   return (
     <div className="App">
-      <div style={{ height: "60vh" }}>
+      <div style={{ height: "100vh" }}>
         <ReactTerminal
-          style={{ height: "60vh" }}
+          style={{ height: "100vh" }}
           prompt={prompt}
           commands={commands}
+          welcomeMessage={WelcomeMessage}
           theme={theme}
+          showControlBar={false}
+          showControlButtons={false}
         />
       </div>
     </div>
