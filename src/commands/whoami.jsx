@@ -13,7 +13,8 @@ const whoami = (
       }}
     >
       <h2>Hello Stranger!</h2>
-      My name is Matthieu! I am a senior Computer Science Student @{" "}
+      My name is <span style={{ fontWeight: "800" }}>Matthieu</span>! I am a
+      senior Computer Science Student @{" "}
       <Link target="_blank" href="https://www.csie.ntu.edu.tw/">
         National Taiwan University
       </Link>
