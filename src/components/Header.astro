@@ -1,0 +1,27 @@
+---
+import ThemeToggle from "./ToggleThemeMenu";
+import HeaderLink from "./HeaderLink.astro";
+// export interface Props {
+//   title: string;
+//   description: string;
+//   image?: string;
+// }
+
+// FIXME: Find a matching image for the blog
+// const { title, description, image = "./cover.jpg" } = Astro.props;
+---
+
+<header class="fixed w-full p-2 z-20 backdrop-blur-sm">
+  <div class="mx-auto max-w-3xl">
+    <nav class="flex items-center gap-3 text-base">
+      <HeaderLink href="/" class="lowercase">
+        <span class="text-yellow-600 dark:text-yellow-300">root</span>
+        <span class="text-green-600 dark:text-green-300">@matdexir</span>
+      </HeaderLink>
+      <HeaderLink href="/about">$whoami</HeaderLink>
+      <HeaderLink href="/contact">$write(fd)</HeaderLink>
+      <div class="flex-1"></div>
+      <ThemeToggle client:visible />
+    </nav>
+  </div>
+</header>
