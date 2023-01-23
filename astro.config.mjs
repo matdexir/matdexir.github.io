@@ -8,7 +8,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 import image from "@astrojs/image";
-import { rehypeAccessibleEmojis } from "rehype-accessible-emojis";
+// import { rehypeAccessibleEmojis } from "rehype-accessible-emojis";
 
 // https://astro.build/config
 export default defineConfig({
@@ -28,6 +28,6 @@ export default defineConfig({
       // Enable word wrap to prevent horizontal scrolling
       wrap: true,
     },
-    remarkPlugins: [rehypeAccessibleEmojis],
+    // remarkPlugins: [rehypeAccessibleEmojis],
   },
 });
