@@ -1,5 +1,6 @@
 # Welcome to [Astro](https://astro.build)
 
+[![Deploy to Github Pages with Astro](https://github.com/matdexir/matdexir.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/matdexir/matdexir.github.io/actions/workflows/deploy.yml)
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
 
