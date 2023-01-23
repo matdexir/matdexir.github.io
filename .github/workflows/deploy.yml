@@ -1,4 +1,4 @@
-name: pages-build-deployment
+name: Deploy to Github Pages with Astro
 
 on:
   # Trigger the workflow every time you push to the `main` branch
