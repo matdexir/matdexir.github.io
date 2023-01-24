@@ -1,0 +1,35 @@
+---
+import Layout from "./Layout.astro";
+import Content from "../components/Content.astro";
+import PostCard from "../components/PostCard";
+export interface Props {
+  tag: string;
+}
+const { tag } = Astro.props;
+
+const posts = (await Astro.glob("../pages/posts/*.md"))
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.createdAt).valueOf() -
+      new Date(a.frontmatter.createdAt).valueOf()
+  )
+  .filter((item) => item.frontmatter.tags.includes(tag));
+---
+
+<Layout title={`${tag} related posts.`}>
+  <Content>
+    <ul class="mt-2">
+      {
+        posts.map((post) => (
+          <PostCard
+            url={post.url!}
+            title={post.frontmatter.title}
+            description={post.frontmatter.description}
+            date={post.frontmatter.publishDate}
+            tags={post.frontmatter.tags}
+          />
+        ))
+      }
+    </ul>
+  </Content>
+</Layout>
