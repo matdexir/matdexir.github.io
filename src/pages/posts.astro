@@ -1,0 +1,51 @@
+---
+import Banner from "../components/Banner.astro";
+import Layout from "../layouts/Layout.astro";
+import Content from "../components/Content.astro";
+const allPosts = await Astro.glob("./posts/*.md");
+const pageTitle = "All my posts";
+
+const dateOptions: object = {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
+---
+
+<Layout title={pageTitle}>
+  <Banner />
+  <Content>
+    <ul class="mt-2">
+      {
+        allPosts.map((post) => (
+          <a href={post.url}>
+            <div class="rounded-md bg-green-600 px-3 py-3 dark:bg-green-900 mt-2 shadow-sm shadow-green-400 hover:scale-105 hover:-translate-y-1 duration-300">
+              <li>
+                <span class="ml-1 text-3xl">{post.frontmatter.title}</span>
+                <p class="ml-1 mt-2 text-zinc-800 dark:text-zinc-300">
+                  {post.frontmatter.description}
+                </p>
+                <div class="my-2 flex gap-2">
+                  {post.frontmatter.tags.map((tag: string) => (
+                    <span class="inline-flex items-center gap-1 rounded-full text-xs bg-zinc-400 dark:bg-zinc-600 font-semibold px-2 py-1 hover:text-green-700">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <p class="ml-1 text-xs font-thin text-zinc-900 dark:text-zinc-400">
+                  Posted on
+                  <span class="text-zinc-600 dark:text-zinc-300">
+                    {new Date(post.frontmatter.publishDate).toLocaleDateString(
+                      "en-US",
+                      dateOptions
+                    )}
+                  </span>
+                </p>
+              </li>
+            </div>
+          </a>
+        ))
+      }
+    </ul>
+  </Content>
+</Layout>
