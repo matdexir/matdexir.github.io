@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Content from "../components/Content.astro";
+import { RxHome } from "react-icons/rx/index";
+// import Banner from "../components/Banner.astro";
+---
+
+<Layout title="Page Not Found">
+  <Content classname="flex flex-col justify-center content-center h-screen">
+    <div
+      class="items-center justify-center flex flex-col border-2 border-red-500 rounded-md px-6 py-4"
+    >
+      <span
+        class="mx-auto text-5xl text-center my-2 text-red-600 dark:text-red-500"
+      >
+        Sorry... Page Not Found</span
+      >
+      <a href="/">
+        <div
+          class="mx-auto flex gap-1 bg-green-500 content-center text-center items-center rounded-md text-4xl text-zinc-600 dark:text-zinc-800 px-4 py-2 hover:scale-105"
+        >
+          <RxHome />
+          Home
+        </div>
+      </a>
+    </div>
+  </Content>
+</Layout>
