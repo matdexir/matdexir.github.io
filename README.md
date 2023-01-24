@@ -1,6 +1,6 @@
 # This my personal portfolio/blog website
 [![Deploy to Github Pages with Astro](https://github.com/matdexir/matdexir.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/matdexir/matdexir.github.io/actions/workflows/deploy.yml)
-> Big thanks to [@craftzdog](https://github.com/craftdogz) for his youtube video which served as an inspiration for this
+> Big thanks to [@craftzdog](https://github.com/craftzdog) for his youtube video which served as an inspiration for this
 
 # Made with
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
