@@ -20,6 +20,7 @@ export default function IconLinks() {
       <a
         href="mailto:matthieudesir@gmail.com"
         className="text-3xl mx-1 hover:text-green-600"
+        aria-label="Contact Mail"
       >
         <AiFillMail />
       </a>
@@ -27,6 +28,7 @@ export default function IconLinks() {
         href="https://github.com/matdexir"
         target="_blank"
         className="text-3xl mx-1 hover:text-green-600"
+        aria-label="Github"
       >
         <AiFillGithub />
       </a>
@@ -34,6 +36,7 @@ export default function IconLinks() {
         href="https://www.linkedin.com/in/matdexir"
         target="_blank"
         className="text-3xl mx-1 hover:text-green-600"
+        aria-label="LinkedIn"
       >
         <AiFillLinkedin />
       </a>

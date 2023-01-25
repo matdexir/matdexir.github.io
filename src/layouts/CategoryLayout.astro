@@ -4,8 +4,9 @@ import Content from "../components/Content.astro";
 import PostCard from "../components/PostCard";
 export interface Props {
   tag: string;
+  description?: string;
 }
-const { tag } = Astro.props;
+const { tag, description = "" } = Astro.props;
 
 const posts = (await Astro.glob("../pages/posts/*.md"))
   .sort(
@@ -16,7 +17,7 @@ const posts = (await Astro.glob("../pages/posts/*.md"))
   .filter((item) => item.frontmatter.tags.includes(tag));
 ---
 
-<Layout title={`${tag} related posts.`}>
+<Layout title={`${tag} related posts.`} description={description}>
   <Content>
     <ul class="mt-2">
       {

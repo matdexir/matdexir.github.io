@@ -3,9 +3,11 @@ import Content from "../components/Content.astro";
 import Banner from "../components/Banner.astro";
 import Layout from "../layouts/Layout.astro";
 import * as Intro from "./about_author/intro.md";
+const title = "Matdexir's page";
+const description = "A page with a basic introduction to matdexir";
 ---
 
-<Layout title="Matdexir's page">
+<Layout title={title} description={description}>
   <Banner />
   <Content class="mt-2">
     <article

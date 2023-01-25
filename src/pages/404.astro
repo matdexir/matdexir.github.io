@@ -3,9 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import Content from "../components/Content.astro";
 import { RxHome } from "react-icons/rx/index";
 // import Banner from "../components/Banner.astro";
+const title = "Page Not Found";
+const description = "404 page for wrong url paths";
 ---
 
-<Layout title="Page Not Found">
+<Layout title={title} description={description}>
   <Content classname="flex flex-col justify-center content-center h-[83vh]">
     <div
       class="items-center flex flex-col border-2 border-red-500 rounded-2xl px-6 py-4"

@@ -5,15 +5,10 @@ import Content from "../components/Content.astro";
 import PostCard from "../components/PostCard";
 const allPosts = await Astro.glob("./posts/*.md");
 const pageTitle = "All my posts";
-
-const dateOptions: object = {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-};
+const description = "An overview of matdexir's recent blog posts";
 ---
 
-<Layout title={pageTitle}>
+<Layout title={pageTitle} description={description}>
   <Banner />
   <Content>
     <ul class="mt-2">
