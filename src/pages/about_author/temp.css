@@ -1,0 +1,9 @@
+.not-prose p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+
+.not-prose p img {
+  margin-bottom: 0.5rem;
+}
