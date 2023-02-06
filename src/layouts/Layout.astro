@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHeader.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import ScrollToTop from "../components/ScrollToTop";
 
 export interface Props {
   title: string;
@@ -23,6 +24,7 @@ const { title, description = "" } = Astro.props;
     <main class="pt-[56px] mb-auto">
       <slot />
     </main>
+    <ScrollToTop client:load />
     <Footer />
   </body>
 </html>
