@@ -13,17 +13,20 @@ const description = "An overview of matdexir's recent blog posts";
   <Content>
     <ul class="mt-2">
       {
-        allPosts.map((post) => (
-          <>
-            <PostCard
-              url={post.url!}
-              title={post.frontmatter.title}
-              description={post.frontmatter.description}
-              date={post.frontmatter.publishDate}
-              tags={post.frontmatter.tags}
-            />
-          </>
-        ))
+        allPosts.map(
+          (post) =>
+            !post.frontmatter.draft && (
+              <>
+                <PostCard
+                  url={post.url!}
+                  title={post.frontmatter.title}
+                  description={post.frontmatter.description}
+                  date={post.frontmatter.publishDate}
+                  tags={post.frontmatter.tags}
+                />
+              </>
+            )
+        )
       }
     </ul>
   </Content>
