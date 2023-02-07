@@ -5,9 +5,10 @@ tags: intro, self-intro
 # Hello Anon!
 
 My name is Matthieu, a Senior Computer Science student at <a href="https://www.ntu.edu.tw" target="_blank">@NTU</a>.
-I have keen interest in Developer Tools, Workflow Hack and Open Source Software. Feel to connect with me and talk about (RUST!) everything and anything OSS.   
+I have keen interest in Developer Tools, Workflow Hack and Open Source Software. Feel to connect with me and talk about (RUST!) everything and anything OSS.
 
 # Skills
+
 ## Programming Languages
 
 <div class="not-prose">
@@ -48,3 +49,66 @@ I have keen interest in Developer Tools, Workflow Hack and Open Source Software.
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
 </div>
+
+## Experience
+
+### 1. [mrhost](https://www.mrhost.com.tw/) (2022) 
+
+#### FullStack Engineering Intern
+
+I worked on refactoring the main webpage from PHP-Laravel to VueJS for better more dynamic interaction. I also built an array of internal tools and set up CI/CD foundations for the current IT team on bitbucket.
+
+## Projects
+
+### File Transfer Over TCP/IP
+
+A simple web server and client implemenation for sharing files over TCP with support for online streaming.
+
+<div class="not-prose">
+
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+</div>
+
+### Personal Blog
+
+This website that you are seeing now (hehe!).
+
+<div class="not-prose">
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+
+</div>
+
+### NES Emulator (WIP)
+
+An Nintendo NES Emulator written from scratch in RUST. 
+
+
+<div class="not-prose">
+
+![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+</div>
+
+### Bipp Finance (WIP)
+
+An online platform for crypto based financial exchanges meant to empower the lesser educated on the topic of cryptocurrencies.
+
+<div class="not-prose">
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
+
+</div>
+
+
+<!-- ## Research Experience -->
+
+<!-- ### NTU SSL Lab (2022) -->
