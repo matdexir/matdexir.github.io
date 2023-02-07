@@ -11,20 +11,18 @@ const description = "An overview of matdexir's recent blog posts";
 <Layout title={pageTitle} description={description}>
   <Banner />
   <Content>
-    <ul class="mt-2">
+    <ul class="mt-2 items-center justify-center">
       {
         allPosts.map(
           (post) =>
             !post.frontmatter.draft && (
-              <>
-                <PostCard
-                  url={post.url!}
-                  title={post.frontmatter.title}
-                  description={post.frontmatter.description}
-                  date={post.frontmatter.publishDate}
-                  tags={post.frontmatter.tags}
-                />
-              </>
+              <PostCard
+                url={post.url!}
+                title={post.frontmatter.title}
+                description={post.frontmatter.description}
+                date={post.frontmatter.publishDate}
+                tags={post.frontmatter.tags}
+              />
             )
         )
       }

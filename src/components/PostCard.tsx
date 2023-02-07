@@ -22,7 +22,9 @@ export default function PostCard({
       <a href={url} className="block">
         <div className="rounded-md bg-green-600 my-8 px-3 py-3 dark:bg-green-900 mt-2 shadow-sm shadow-green-400 hover:scale-105 hover:-translate-y-1 duration-300">
           <li>
-            <span className="ml-1 text-3xl">{title}</span>
+            <a href={url}>
+              <span className="ml-1 text-3xl">{title}</span>
+            </a>
             <p className="ml-1 mt-2 text-zinc-800 dark:text-zinc-300">
               {description}
             </p>
