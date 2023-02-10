@@ -13,8 +13,6 @@
   "dependencies": {
     "@astrojs/react": "^1.2.2",
     "@astrojs/tailwind": "^3.0.0",
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
     "astro": "2.0.10",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -25,6 +23,9 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@types/uuid": "^9.0.0",
     "cz-conventional-changelog": "^3.3.0"
   },
   "config": {

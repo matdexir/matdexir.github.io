@@ -3,6 +3,7 @@ import Banner from "../components/Banner.astro";
 import Layout from "../layouts/Layout.astro";
 import Content from "../components/Content.astro";
 import PostCard from "../components/PostCard";
+import { v4 } from "uuid";
 const allPosts = await Astro.glob("./posts/*.md");
 const pageTitle = "All my posts";
 const description = "An overview of matdexir's recent blog posts";
@@ -17,11 +18,13 @@ const description = "An overview of matdexir's recent blog posts";
           (post) =>
             !post.frontmatter.draft && (
               <PostCard
+                id={v4()}
                 url={post.url!}
                 title={post.frontmatter.title}
                 description={post.frontmatter.description}
                 date={post.frontmatter.publishDate}
                 tags={post.frontmatter.tags}
+                client:load
               />
             )
         )
