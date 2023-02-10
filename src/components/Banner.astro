@@ -12,11 +12,17 @@ import code from "../../images/code.webp";
     />
   </div>
   <div class="z-10 text-center px-8 drop-shadow-lg shadow-black">
-    <div class="uppercase text-sm py-4 mb-4">Welcome to</div>
-    <div class="text-4xl font-mono">
-      My Personal <span class="text-green-600 dark:text-green-500 animate-pulse"
-        >Space</span
-      >
-    </div>
+    <div class="uppercase py-4 mb-4 text-2xl">Welcome to</div>
+    <div class="text-4xl font-mono" id="my-space"></div>
   </div>
 </section>
+
+<script>
+  import Typewriter from "typewriter-effect/dist/core";
+  new Typewriter("#my-space", {
+    strings: ["My Personal Space"],
+    autoStart: true,
+    loop: true,
+    pauseFor: 2500,
+  });
+</script>
