@@ -26,6 +26,7 @@
     "@tailwindcss/typography": "^0.5.9",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@types/react-transition-group": "^4.4.5",
     "@types/uuid": "^9.0.0",
     "cz-conventional-changelog": "^3.3.0"
   },
