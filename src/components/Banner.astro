@@ -1,14 +1,16 @@
 ---
-import { Image } from "@astrojs/image/components";
-import code from "../../images/code.webp";
+// import { Image } from "@astrojs/image/components";
+// import code from "../../images/code.png";
 ---
 
 <section class="relative mb-6 h-64 flex justify-center items-center">
   <div class="absolute w-full h-full overflow-hidden">
-    <Image
-      src={code}
+    <img
+      src="../../images/code.png"
       class="object-cover min-w-full min-h-full inset-0 opacity-30"
       alt="Random C++ Code Image"
+      decoding="async"
+      loading="lazy"
     />
   </div>
   <div class="z-10 text-center px-8 drop-shadow-lg shadow-black">
