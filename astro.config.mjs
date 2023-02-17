@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 import tailwind from "@astrojs/tailwind";
-// import image from "@astrojs/image";
+import image from "@astrojs/image";
 
 // https://astro.build/config
 import react from "@astrojs/react";
@@ -12,6 +12,7 @@ export default defineConfig({
   integrations: [
     react(),
     tailwind(),
+    image(),
     // image({
     //   serviceEntryPoint: "@astrojs/image/sharp",
     // }),
