@@ -4,9 +4,12 @@ import Content from "../components/Content.astro";
 export interface Props {
   title: string;
   description?: string;
+  frontmatter?: any;
 }
 
 const { title, description = "" } = Astro.props;
+// const { ToC } = Astro.props.frontmatter;
+// const { minuteRead } = Astro.props.frontmatter;
 ---
 
 <Layout title={title} description={description}>

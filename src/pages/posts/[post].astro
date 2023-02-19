@@ -1,0 +1,32 @@
+---
+import BlogLayout from "../../layouts/BlogLayout.astro";
+import getReadingTime from "reading-time";
+
+export async function getStaticPaths() {
+  const posts = await Astro.glob("./blog_posts/*.md");
+  return Array.from(posts).map((p) => {
+    return {
+      params: {
+        post: p.frontmatter.slug,
+      },
+      props: {
+        name: p.frontmatter.slug,
+        title: p.frontmatter.title,
+        minuteRead: p.frontmatter.minuteRead,
+        content: p.compiledContent(),
+        text: p.rawContent(),
+      },
+    };
+  });
+}
+const { title, content, minuteRead, text } = Astro.props;
+console.log(text);
+const time = getReadingTime(text.toString());
+console.log(time);
+---
+
+<BlogLayout title={title}>
+  {time.text}
+  <!-- {text} -->
+  <article set:html={content} />
+</BlogLayout>

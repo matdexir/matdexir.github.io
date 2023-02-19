@@ -1,13 +1,14 @@
 ---
 title: 'My First Blog Post'
 publishDate: 2022-07-01
+slug: "post3-rust"
 description: 'This is the first post of my new Astro blog.'
 author: 'matdexir'
 image:
     url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg' 
     alt: 'The Astro logo with the word One.'
 tags: ["astro", "blogging"]
-layout: "../../layouts/BlogLayout.astro"
+# layout: "../../layouts/BlogLayout.astro"
 ---
 
 # My First Blog Post

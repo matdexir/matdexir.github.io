@@ -1,11 +1,12 @@
 ---
 title: "My experience with learning Rust"
+slug: "learning-rust"
 publishDate: 2023-01-28
 description: "A quick tour of my experience with learning the Rust programming language"
 author: 'matdexir'
 draft: true
 tags: ["rust", "learning", "programming"]
-layout: ../../layouts/BlogLayout.astro
+# layout: ../../layouts/BlogLayout.astro
 ---
 
 # Overview
