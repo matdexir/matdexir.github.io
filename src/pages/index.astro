@@ -2,7 +2,7 @@
 import Content from "../components/Content.astro";
 import Banner from "../components/Banner.astro";
 import Layout from "../layouts/Layout.astro";
-import * as Intro from "./about_author/intro.md";
+import { Content as Intro } from "./about_author/intro.md";
 const title = "Matdexir's page";
 const description = "A page with a basic introduction to matdexir";
 import "./about_author/temp.css";
@@ -13,7 +13,8 @@ import "./about_author/temp.css";
   <Content class="mt-2">
     <article
       class="prose dark:prose-invert prose-headings:text-green-600 prose-a:text-green-600 prose-a:no-underline"
-      set:html={Intro.compiledContent()}
-    />
+    >
+      <Intro />
+    </article>
   </Content>
 </Layout>
