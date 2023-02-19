@@ -3,7 +3,7 @@ import BlogLayout from "../../layouts/BlogLayout.astro";
 import getReadingTime from "reading-time";
 
 export async function getStaticPaths() {
-  const posts = await Astro.glob("./blog_posts/*.md");
+  const posts = await Astro.glob("./*.md");
   return Array.from(posts).map((p) => {
     return {
       params: {
@@ -12,21 +12,20 @@ export async function getStaticPaths() {
       props: {
         name: p.frontmatter.slug,
         title: p.frontmatter.title,
-        minuteRead: p.frontmatter.minuteRead,
         content: p.compiledContent(),
         text: p.rawContent(),
       },
     };
   });
 }
-const { title, content, minuteRead, text } = Astro.props;
-console.log(text);
+const { title, content, text } = Astro.props;
 const time = getReadingTime(text.toString());
-console.log(time);
+// console.log(time);
 ---
 
 <BlogLayout title={title}>
-  {time.text}
-  <!-- {text} -->
+  <p class="text-zinc-700 dark:text-zinc-400">
+    {time.text}
+  </p>
   <article set:html={content} />
 </BlogLayout>

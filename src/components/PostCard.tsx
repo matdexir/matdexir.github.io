@@ -31,7 +31,7 @@ export default function PostCard({
           </p>
           <div className="my-2 flex gap-2 items-center justify-center">
             {tags.map((tag: string) => (
-              <a href={`/tags/${tag.toLowerCase()}`}>
+              <a key={tag} href={`/tags/${tag.toLowerCase()}`}>
                 <span className="inline-flex items-center gap-1 rounded-full text-xs bg-zinc-400 dark:bg-zinc-600 font-semibold px-2 py-1 hover:text-green-700">
                   {tag}
                 </span>

@@ -6,8 +6,8 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 import react from "@astrojs/react";
-import remarkToc from "remark-toc";
-import { remarkReadingTime } from "./remark-reading-time.mjs";
+// import remarkToc from "remark-toc";
+// import { remarkReadingTime } from "./remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
@@ -34,7 +34,7 @@ export default defineConfig({
       // Enable word wrap to prevent horizontal scrolling
       wrap: true,
     },
-    remarkPlugins: [remarkToc, remarkReadingTime],
+    remarkPlugins: [],
     extendDefaultPlugins: true,
   },
 });

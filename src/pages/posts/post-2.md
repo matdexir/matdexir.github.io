@@ -1,7 +1,7 @@
 ---
 title: 'My First Blog Post'
+slug: "post-2"
 publishDate: 2022-07-01
-slug: "post3-rust"
 description: 'This is the first post of my new Astro blog.'
 author: 'matdexir'
 image:

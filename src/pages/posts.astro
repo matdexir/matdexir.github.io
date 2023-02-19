@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import Content from "../components/Content.astro";
 import PostCard from "../components/PostCard";
 import { v4 } from "uuid";
-const allPosts = await Astro.glob("./posts/blog_posts/*.md");
+const allPosts = await Astro.glob("./posts/*.md");
 const pageTitle = "All my posts";
 const description = "An overview of matdexir's recent blog posts";
 ---
@@ -24,7 +24,7 @@ const description = "An overview of matdexir's recent blog posts";
                 description={post.frontmatter.description}
                 date={post.frontmatter.publishDate}
                 tags={post.frontmatter.tags}
-                client:load
+                client:only
               />
             )
         )
