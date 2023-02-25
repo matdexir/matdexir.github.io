@@ -12,19 +12,32 @@ export async function getStaticPaths() {
       props: {
         name: p.frontmatter.slug,
         title: p.frontmatter.title,
+        tags: p.frontmatter.tags,
         content: p.compiledContent(),
         text: p.rawContent(),
       },
     };
   });
 }
-const { title, content, text } = Astro.props;
+const { title, content, text, tags } = Astro.props;
 const time = getReadingTime(text.toString());
+console.log(tags);
 ---
 
 <BlogLayout title={title}>
-  <p class="text-zinc-700 dark:text-zinc-400">
+  <p class="text-zinc-700 dark:text-zinc-400 mb-1">
     {time.text}
   </p>
+  <div class="mb-2 flex gap-2 items-center">
+    {
+      tags.map((tag: string) => (
+        <a href={`/tags/${tag.toLowerCase()}`}>
+          <span class="inline-flex items-center gap-1 rounded-full text-xs bg-zinc-400 dark:bg-zinc-600 font-semibold px-2 py-1 hover:text-green-800 dark:hover:text-green-600 no-underline">
+            {tag}
+          </span>
+        </a>
+      ))
+    }
+  </div>
   <article set:html={content} />
 </BlogLayout>
