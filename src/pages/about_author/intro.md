@@ -84,9 +84,7 @@ This website that you are seeing now (hehe!).
 </div>
 
 ### NES Emulator (WIP)
-
 An Nintendo NES Emulator written from scratch in RUST. 
-
 
 <div class="not-prose">
 
