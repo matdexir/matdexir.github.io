@@ -1,8 +1,10 @@
 import { AiOutlineArrowUp } from "react-icons/ai/index";
 import { useState, useEffect, Fragment, useRef } from "react";
+import "@animxyz/core";
+import { XyzTransition } from "@animxyz/react";
 // import { Transition, TransitionStatus } from "react-transition-group/";
 
-import "../styles/transition.css";
+// import "../styles/transition.css";
 
 export default function ScrollToTop() {
   const [showButton, setShowButton] = useState(false);
@@ -22,15 +24,21 @@ export default function ScrollToTop() {
 
   return (
     <Fragment>
-      {showButton && (
-        <button
-          className={`fixed bottom-5 right-7 p-4 md:bottom-3 md:right-3 z-50 cursor-pointer  bg-green-500 dark:bg-green-600 rounded-full`}
-          aria-label="back-to-top-button"
-          onClick={handleScrollToTop}
-        >
-          <AiOutlineArrowUp />
-        </button>
-      )}
+      <XyzTransition
+        appear
+        xyz="fade down-5 rotate-right-50%"
+        duration={"auto"}
+      >
+        {showButton && (
+          <button
+            className={`fixed bottom-6 right-7 p-4 md:bottom-3 md:right-3 z-50 cursor-pointer  bg-green-500 dark:bg-green-600 rounded-full`}
+            aria-label="back-to-top-button"
+            onClick={handleScrollToTop}
+          >
+            <AiOutlineArrowUp />
+          </button>
+        )}
+      </XyzTransition>
     </Fragment>
   );
 }

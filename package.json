@@ -11,6 +11,8 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@animxyz/core": "^0.6.6",
+    "@animxyz/react": "^0.6.7",
     "@astrojs/image": "^0.15.0",
     "@astrojs/react": "^1.2.2",
     "@astrojs/tailwind": "^3.0.0",
