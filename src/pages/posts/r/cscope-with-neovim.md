@@ -4,9 +4,9 @@ slug: "cscope-nvim-lua-config"
 publishDate: 2023-03-28
 description: "It is a basic tutorial about using cscope inside of neovim 0.5.0 and later."
 author: "matdexir"
-image:
-  url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
-  alt: "The Astro logo with the word One."
+# image:
+#   url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
+#   alt: "The Astro logo with the word One."
 tags: ["neovim", "lua", "cscope"]
 # layout: "../../layouts/BlogLayout.astro"
 ---
@@ -42,7 +42,7 @@ However it is not suitable for more mature codebases since you may experience pe
 
 ## Let's get to it!
 
-For this tutorial, I will use the recommanded keymaps of `cscope`'s team. However feel free to change it to your liking.
+For this tutorial, I will use the recommanded keymaps of `cscope` team. However feel free to change it to your liking.
 
 ```lua
 vim.api.nvim_set_keymap("n", "<C-\\>s", ":cs find s <C-R>=expand('<cword>')<CR><CR>")
@@ -53,3 +53,7 @@ vim.api.nvim_set_keymap("n", "<C-\\>f", ":cs find f <C-R>=expand('<cword>')<CR><
 vim.api.nvim_set_keymap("n", "<C-\\>i", ":cs find i <C-R>=expand('<cword>')<CR><CR>")
 vim.api.nvim_set_keymap("n", "<C-\\>d", ":cs find d <C-R>=expand('<cword>')<CR><CR>")
 ```
+
+There you go!
+
+For more, you can refer the the [cscope documentation](https://cscope.sourceforge.net/).
