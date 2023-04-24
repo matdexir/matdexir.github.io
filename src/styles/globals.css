@@ -5,3 +5,11 @@ body {
   text-rendering: optimizeLegibility;
   overflow-wrap: break-word;
 }
+
+.prose blockquote p:first-of-type::before {
+  content: none;
+}
+
+.prose blockquote p:first-of-type::before {
+  content: none;
+}
