@@ -8,7 +8,6 @@ author: "matdexir"
 #   url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
 #   alt: "The Astro logo with the word One."
 tags: ["neovim", "lua", "cscope"]
-# layout: "../../layouts/BlogLayout.astro"
 ---
 
 # How to use `cscope` with `Neovim`
