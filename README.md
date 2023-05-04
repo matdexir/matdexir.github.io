@@ -11,17 +11,64 @@
 ## 🚀 Project Structure
 
 ```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+.
+├── astro.config.mjs
+├── color_palette.png
+├── images
+│   ├── code.png
+│   └── code.webp
+├── LICENSE
+├── package.json
+├── public
+│   ├── favicon.svg
+│   ├── images
+│   │   ├── code.png
+│   │   └── code.webp
+│   └── robots.txt
+├── README.md
+├── remark-reading-time.mjs
+├── src
+│   ├── components
+│   │   ├── Banner.astro
+│   │   ├── BaseHeader.astro
+│   │   ├── Card.astro
+│   │   ├── Content.astro
+│   │   ├── Footer.astro
+│   │   ├── Header.astro
+│   │   ├── HeaderLink.astro
+│   │   ├── IconLinks.tsx
+│   │   ├── PostCard.tsx
+│   │   ├── ScrollToTop.tsx
+│   │   └── ToggleThemeMenu.tsx
+│   ├── env.d.ts
+│   ├── layouts
+│   │   ├── BlogLayout.astro
+│   │   ├── CategoryLayout.astro
+│   │   └── Layout.astro
+│   ├── pages
+│   │   ├── 404.astro
+│   │   ├── about_author
+│   │   │   ├── haitian-flag.png
+│   │   │   ├── intro.md
+│   │   │   └── temp.css
+│   │   ├── index.astro
+│   │   ├── posts
+│   │   │   ├── [post].astro
+│   │   │   └── r
+│   │   │       ├── cscope-with-neovim.md
+│   │   │       ├── learning-rust.md
+│   │   │       └── post-1.md
+│   │   ├── posts.astro
+│   │   └── tags
+│   │       └── [id].astro
+│   ├── styles
+│   │   ├── globals.css
+│   │   └── transition.css
+│   └── typewriter.d.ts
+├── tailwind.config.cjs
+├── tree.txt
+├── tsconfig.json
+└── yarn.lock
 ```
 
 ## 🧞 Commands
