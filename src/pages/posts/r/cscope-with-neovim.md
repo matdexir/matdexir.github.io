@@ -13,6 +13,7 @@ tags: ["neovim", "lua", "cscope"]
 # How to use `cscope` with `Neovim`
 
 > NOTE: This tutorial assumes that you already know how to do basic neovim config with lua.
+> NOTE 2: From version `0.9.0` onwards, cscope has been removed from neovim.
 
 [cscope](https://cscope.sourceforge.net/) is a tool for browsing source code. It has been made with UNIX philosophy in mind i.e "Do one thing and Do it right". In a nutshell, it allows searching for:
 
