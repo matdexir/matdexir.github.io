@@ -2,7 +2,7 @@
 title: "How to use cscope with Neovim Lua Config"
 slug: "cscope-nvim-lua-config"
 publishDate: 2023-03-28
-description: "It is a basic tutorial about using cscope inside of neovim 0.5.0 and later."
+description: "It is a basic tutorial about using cscope inside of neovim 0.5.0 < 0.9.0."
 author: "matdexir"
 # image:
 #   url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
@@ -13,6 +13,7 @@ tags: ["neovim", "lua", "cscope"]
 # How to use `cscope` with `Neovim`
 
 > NOTE: This tutorial assumes that you already know how to do basic neovim config with lua.
+
 > NOTE 2: From version `0.9.0` onwards, cscope has been removed from neovim.
 
 [cscope](https://cscope.sourceforge.net/) is a tool for browsing source code. It has been made with UNIX philosophy in mind i.e "Do one thing and Do it right". In a nutshell, it allows searching for:

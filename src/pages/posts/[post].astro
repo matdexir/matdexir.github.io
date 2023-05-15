@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 }
 const { title, content, text, tags } = Astro.props;
 const time = getReadingTime(text.toString());
-console.log(tags);
+// console.log(tags);
 ---
 
 <BlogLayout title={title}>
