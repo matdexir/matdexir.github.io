@@ -6,6 +6,7 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 import react from "@astrojs/react";
+// import remarkCodeTitles from "remark-code-titles";
 // import remarkToc from "remark-toc";
 // import { remarkReadingTime } from "./remark-reading-time.mjs";
 

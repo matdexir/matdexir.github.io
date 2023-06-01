@@ -45,7 +45,7 @@ However it is not suitable for more mature codebases since you may experience pe
 
 For this tutorial, I will use the recommanded keymaps of `cscope` team. However feel free to change it to your liking.
 
-```lua
+```lua:name.lua
 vim.api.nvim_set_keymap("n", "<C-\\>s", ":cs find s <C-R>=expand('<cword>')<CR><CR>")
 vim.api.nvim_set_keymap("n", "<C-\\>g", ":cs find g <C-R>=expand('<cword>')<CR><CR>")
 vim.api.nvim_set_keymap("n", "<C-\\>t", ":cs find t <C-R>=expand('<cword>')<CR><CR>")
