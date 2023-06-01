@@ -22,6 +22,7 @@ export default defineConfig({
   site: "https://matdexir.github.io",
   base: "/",
   markdown: {
+    drafts: true,
     syntaxHighlight: "shiki",
     shikiConfig: {
       // Choose from Shiki's built-in themes (or add your own)
@@ -32,9 +33,10 @@ export default defineConfig({
       // https://github.com/shikijs/shiki/blob/main/docs/languages.md
       // langs: [],
       // Enable word wrap to prevent horizontal scrolling
-      wrap: true,
+      wrap: false,
     },
-    remarkPlugins: [],
+    // remarkPlugins: [remarkToc],
     extendDefaultPlugins: true,
+    gfm: true,
   },
 });
