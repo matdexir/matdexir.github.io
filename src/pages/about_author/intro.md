@@ -52,7 +52,13 @@ I have keen interest in Developer Tools, Workflow Hack and Open Source Software.
 
 ## Experience
 
-### 1. [mrhost](https://www.mrhost.com.tw/) (2022) 
+### [PEGATRON](https://www.pegatroncorp.com/)(Jun 2023 - Present)
+
+#### DevOps/Platform Engineer Intern 
+
+I worked on a project leveraging the use of LLMs such as ChatGPT, LLaMa to peform root cause analysis to the companies' internal cloud structure.
+
+### [mrhost](https://www.mrhost.com.tw/)(2022) 
 
 #### FullStack Engineering Intern
 
