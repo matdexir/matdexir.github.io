@@ -88,31 +88,3 @@ This website that you are seeing now (hehe!).
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
 </div>
-
-### NES Emulator (WIP)
-An Nintendo NES Emulator written from scratch in RUST. 
-
-<div class="not-prose">
-
-![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-
-</div>
-
-### Bipp Finance (WIP)
-
-An online platform for crypto based financial exchanges meant to empower the lesser educated on the topic of cryptocurrencies.
-
-<div class="not-prose">
-
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
-
-</div>
-
-
-<!-- ## Research Experience -->
-
-<!-- ### NTU SSL Lab (2022) -->

@@ -24,6 +24,7 @@ export default function IconLinks() {
           className="text-3xl mx-1 hover:text-green-600"
           aria-label="Contact Mail"
         >
+          <span className="hidden mr-1">my email </span>
           <AiFillMail />
         </a>
         <a
@@ -32,6 +33,7 @@ export default function IconLinks() {
           className="text-3xl mx-1 hover:text-green-600"
           aria-label="Github"
         >
+          <span className="hidden mr-1">my github </span>
           <AiFillGithub />
         </a>
         <a
@@ -40,6 +42,7 @@ export default function IconLinks() {
           className="text-3xl mx-1 hover:text-green-600"
           aria-label="LinkedIn"
         >
+          <span className="hidden mr-1">my linkedin </span>
           <AiFillLinkedin />
         </a>
       </div>
