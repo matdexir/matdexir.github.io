@@ -1,12 +1,12 @@
 ---
-title: 'My First Blog Post'
+title: "My First Blog Post"
 slug: "slug-post-1"
 publishDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
-author: 'matdexir'
+description: "This is the first post of my new Astro blog."
+author: "matdexir"
 image:
-    url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg' 
-    alt: 'The Astro logo with the word One.'
+  url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
+  alt: "The Astro logo with the word One."
 tags: ["astro", "blogging"]
 # layout: "../../layouts/BlogLayout.astro"
 ---

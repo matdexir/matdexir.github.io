@@ -22,7 +22,7 @@ export default function PostCard({
   return (
     <li key={id}>
       <a href={url}>
-        <button className="rounded-md w-[100%] bg-green-600 my-8 px-3 py-3 dark:bg-green-900 mt-2 shadow-sm shadow-green-400 hover:scale-105 hover:-translate-y-1 duration-300">
+        <button className="rounded-md w-[100%] bg-emerald-600 my-8 px-3 py-3 dark:bg-emerald-900 mt-2 shadow-sm shadow-emerald-400 hover:scale-105 hover:-translate-y-1 duration-300">
           <span className="ml-1 text-3xl  text-zinc-800 dark:text-yellow-200">
             {title}
           </span>

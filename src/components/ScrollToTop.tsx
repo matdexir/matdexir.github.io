@@ -31,7 +31,7 @@ export default function ScrollToTop() {
       >
         {showButton && (
           <button
-            className={`fixed bottom-6 right-7 p-4 md:bottom-3 md:right-3 z-50 cursor-pointer  bg-green-500 dark:bg-green-600 rounded-full`}
+            className={`fixed bottom-6 right-7 p-4 md:bottom-3 md:right-3 z-50 cursor-pointer bg-emerald-500 dark:bg-emerald-600 rounded-full`}
             aria-label="back-to-top-button"
             onClick={handleScrollToTop}
           >

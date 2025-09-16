@@ -3,7 +3,7 @@ title: "My experience with learning Rust"
 slug: "slug-learning-rust"
 publishDate: 2023-01-28
 description: "A quick tour of my experience with learning the Rust programming language"
-author: 'matdexir'
+author: "matdexir"
 draft: true
 tags: ["rust", "learning", "programming"]
 # layout: ../../layouts/BlogLayout.astro
@@ -11,7 +11,7 @@ tags: ["rust", "learning", "programming"]
 
 # Overview
 
-For the last 3 years, I have been learning Rust on and off. Basically, I would go for a page or two in the phenomenal Rust official guide and never pick it up again for 6 months. As you can imagine, I learned nothing that was different from C/C++ or JavaScript. However, lately, I have felt the need to go beyond and challenge myself into the deeper world of system's programming. I would say that re-learning(I never follow in class :'( 老師們對不起!)  and I have quite fell in love with those concepts and the importance of memory safety.
+For the last 3 years, I have been learning Rust on and off. Basically, I would go for a page or two in the phenomenal Rust official guide and never pick it up again for 6 months. As you can imagine, I learned nothing that was different from C/C++ or JavaScript. However, lately, I have felt the need to go beyond and challenge myself into the deeper world of system's programming. I would say that re-learning(I never follow in class :'( 老師們對不起!) and I have quite fell in love with those concepts and the importance of memory safety.
 
 ## Building an half-assed NES Emulator
 
