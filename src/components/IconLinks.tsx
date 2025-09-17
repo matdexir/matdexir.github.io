@@ -9,7 +9,7 @@ import { Fragment } from "react";
 
 // function Link({ target, content = "" }: LinkProps): JSX.Element {
 //   return (
-//     <a href={target} className="text-3xl mx-1 hover:text-green-600">
+//     <a href={target} className="text-3xl mx-1 hover:text-emerald-600">
 //       {content}
 //     </a>
 //   );
@@ -21,7 +21,7 @@ export default function IconLinks() {
       <div className="text-center justify-center flex mb-2">
         <a
           href="mailto:matthieudesir@gmail.com"
-          className="text-3xl mx-1 hover:text-green-600"
+          className="text-3xl mx-1 hover:text-emerald-600"
           aria-label="Contact Mail"
         >
           <span className="hidden mr-1">my email </span>
@@ -30,7 +30,7 @@ export default function IconLinks() {
         <a
           href="https://github.com/matdexir"
           target="_blank"
-          className="text-3xl mx-1 hover:text-green-600"
+          className="text-3xl mx-1 hover:text-emerald-600"
           aria-label="Github"
         >
           <span className="hidden mr-1">my github </span>
@@ -39,7 +39,7 @@ export default function IconLinks() {
         <a
           href="https://www.linkedin.com/in/matdexir"
           target="_blank"
-          className="text-3xl mx-1 hover:text-green-600"
+          className="text-3xl mx-1 hover:text-emerald-600"
           aria-label="LinkedIn"
         >
           <span className="hidden mr-1">my linkedin </span>
