@@ -10,18 +10,20 @@ export interface Props {
 }
 
 const { title, description = "" } = Astro.props;
+import { ViewTransitions, slide } from "astro:transitions";
 ---
 
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="en">
   <head>
     <BaseHead title={title} description={description} />
+    <ViewTransitions />
   </head>
   <body
 class="font-mono bg-zinc-100 h-screen flex flex-col dark:bg-zinc-900 text-emerald-800 dark:text-emerald-100 break-words leading-6 transition-colors duration-500"
   >
     <Header />
-    <main class="pt-[56px] mb-auto">
+    <main class="pt-[56px] mb-auto" transition:animate={slide({ duration: "0.6s" })}>
       <slot />
     </main>
     <ScrollToTop client:load />
